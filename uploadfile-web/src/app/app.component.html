@@ -1,0 +1,40 @@
+<div class="container">
+  <div class="row header-section">
+    <span class="center">Angular / Nodejs File Upload Sample</span>
+  </div>
+  <div class="row">
+    <div class="col-md-8 center">
+      <div class="row card">
+        <h4>Upload Section</h4>
+        <div id="fileSelector">
+          <input type="file" name="fileUpload" id="fileUpload"
+          multiple ng2FileSelect [uploader]="uploader">
+        </div>
+        <div class="row item" *ngFor="let item of uploader.queue">
+          <div class="col-sm-4">
+            {{item.file.name}}
+          </div>
+          <div class="col-sm-4">
+            <div class="progress">
+              <div class="progress-bar"
+                   role="progressbar"
+                   aria-valuenow="70"
+                   aria-valuemin="0"
+                   aria-valuemax="100"
+                    [ngStyle]="{'width': item.progress+'%'}">
+                <span class="sr-only">70% Complete</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <button type="button" class="btn btn-primary" (click)="item.upload()">Upload</button>
+            <button type="button" class="btn btn-danger" (click)="item.remove()">Cancel</button>
+          </div>
+        </div>
+        <div>
+          <button type="button" class="btn btn-info" (click)="uploader.uploadAll()">Upload All</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
