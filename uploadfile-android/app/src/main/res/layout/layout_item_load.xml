@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/nameFileTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="name file"
+        android:textSize="14sp"
+        />
+
+    <com.newgate.uploadfile.view.ProgressAnimationView
+        android:id="@+id/uploadFileProgress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"/>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/uploadButton"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="Upload"
+            android:textColor="@android:color/white"
+            android:background="@android:color/holo_green_dark"/>
+        <Button
+            android:id="@+id/cancelButton"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginLeft="8dp"
+            android:text="Cancel"
+            android:textColor="@android:color/white"
+            android:background="@android:color/darker_gray"/>
+        <Button
+            android:id="@+id/viewDetailButton"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginLeft="8dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="View Detail"
+            android:textColor="@android:color/white"
+            android:background="@android:color/holo_blue_dark"
+            android:visibility="invisible"/>
+    </LinearLayout>
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/darker_gray"
+        />
+
+</LinearLayout>
