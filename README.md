@@ -10,3 +10,14 @@ ios: pod 'Alamofire'<br>
 Nodejs-Angularjs: <br>
 https://www.youtube.com/watch?v=srPXMt1Q0nY<br>
 https://www.youtube.com/watch?v=wdl59LAe4M8
+
+<b>Quick Setup <br>
+* Download the code from here OR clone our repository 
+* Navigate to the server directory in our app using command-line.
+* Run npm install
+* Run node app to start server nodejs
+* Run ng serve to start web angularjs
+* Simply run node app.js
+* Open server with path http://localhost:3000 in your browser
+* Open web with path http://localhost:4200 in your browser
+
