@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="FileUploadViewCell" rowHeight="108" id="KGk-i7-Jjw" customClass="FileUploadViewCell" customModule="uploadfile_ios" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="319" height="108"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="319" height="107.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="EIh-E1-nAV">
+                        <rect key="frame" x="16" y="59" width="287" height="2"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="2" id="Hxa-HX-9Ia"/>
+                        </constraints>
+                    </progressView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LlW-6P-GnZ">
+                        <rect key="frame" x="16" y="70" width="80" height="30"/>
+                        <color key="backgroundColor" red="0.23788462166831847" green="0.67972715736040601" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="39V-Ir-7QH"/>
+                            <constraint firstAttribute="height" constant="30" id="3Ga-jd-VS2"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <state key="normal" title="Upload"/>
+                        <connections>
+                            <action selector="touchUploadButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="M6w-so-NeC"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p4z-Nu-AQJ">
+                        <rect key="frame" x="104" y="69" width="80" height="30"/>
+                        <color key="backgroundColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="03l-6u-6Vz"/>
+                            <constraint firstAttribute="height" constant="30" id="dJ8-OT-eUI"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <state key="normal" title="Cancel"/>
+                        <connections>
+                            <action selector="touchCancelButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="GxR-uY-8QR"/>
+                        </connections>
+                    </button>
+                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RaB-v9-toK">
+                        <rect key="frame" x="192" y="69" width="80" height="30"/>
+                        <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="3ul-K1-oS3"/>
+                            <constraint firstAttribute="height" constant="30" id="ofU-AJ-BeZ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <state key="normal" title="View Detail">
+                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="touchViewDetailButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Bqg-Yc-Rme"/>
+                        </connections>
+                    </button>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="X97-t0-KHS">
+                        <rect key="frame" x="16" y="11" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="0oh-ne-xWm"/>
+                            <constraint firstAttribute="height" constant="40" id="kQ3-QT-ooD"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="EIh-E1-nAV" firstAttribute="top" secondItem="X97-t0-KHS" secondAttribute="bottom" constant="8" id="0ap-W8-Yk8"/>
+                    <constraint firstItem="p4z-Nu-AQJ" firstAttribute="top" secondItem="EIh-E1-nAV" secondAttribute="bottom" constant="8" id="4ic-2J-usO"/>
+                    <constraint firstItem="EIh-E1-nAV" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="Djn-m3-rxP"/>
+                    <constraint firstItem="LlW-6P-GnZ" firstAttribute="top" secondItem="EIh-E1-nAV" secondAttribute="bottom" constant="9" id="Tjt-6z-8tY"/>
+                    <constraint firstItem="X97-t0-KHS" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="W8D-PH-WUk"/>
+                    <constraint firstItem="X97-t0-KHS" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="cCj-gU-VnT"/>
+                    <constraint firstItem="p4z-Nu-AQJ" firstAttribute="leading" secondItem="LlW-6P-GnZ" secondAttribute="trailing" constant="8" id="hE7-bW-YPb"/>
+                    <constraint firstItem="EIh-E1-nAV" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="lA1-J0-7iN"/>
+                    <constraint firstItem="RaB-v9-toK" firstAttribute="top" secondItem="EIh-E1-nAV" secondAttribute="bottom" constant="8" id="p9C-xv-KFd"/>
+                    <constraint firstItem="RaB-v9-toK" firstAttribute="leading" secondItem="p4z-Nu-AQJ" secondAttribute="trailing" constant="8" id="qt4-Kc-XZl"/>
+                    <constraint firstItem="LlW-6P-GnZ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="zQD-l7-RLs"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="uploadImageView" destination="X97-t0-KHS" id="svi-mO-AZb"/>
+                <outlet property="uploadProgressView" destination="EIh-E1-nAV" id="Rgi-qq-trJ"/>
+                <outlet property="viewDetailButton" destination="RaB-v9-toK" id="3TL-dR-PQw"/>
+            </connections>
+            <point key="canvasLocation" x="24.5" y="11"/>
+        </tableViewCell>
+    </objects>
+</document>
